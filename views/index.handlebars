@@ -1,0 +1,24 @@
+<section class="py-5">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Business Ebook
+            </h1>
+            <p class="lead">Learn How to grow your business</p>
+            <form action="/charge" method="post">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="{{{stripePublishableKeys}}}" data-amount="2500" data-name="Business EBook"
+                    data-description="Ebook Written by Anas" data-image="/img/marketplace.jpg" data-locale='auto'>
+                    </script>
+                <script>
+                    // hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none'
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Get this in 25$</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <img class="img-fluid w-50 ml-5" src="/img/ebook.png">
+        </div>
+    </div>
+</section>
