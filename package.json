@@ -1,0 +1,17 @@
+{
+  "name": "stripeapi",
+  "version": "1.0.0",
+  "description": "App to sell ebook",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Abs",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "stripe": "^8.69.0"
+  }
+}
