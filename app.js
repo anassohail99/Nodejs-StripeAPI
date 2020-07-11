@@ -33,7 +33,7 @@ app.use(express.static(`${__dirname}/public`));
 // index route
 app.get("/", (req, res) => {
   res.render("index", {
-    stripePublishableKeys: stripePublishableKeys,
+    stripePublishableKeys: keys.stripePublishableKeys,
   });
 });
 
